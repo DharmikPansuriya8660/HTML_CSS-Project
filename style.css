@@ -1,0 +1,302 @@
+*{
+ box-sizing: border-box;
+ margin: 0px;
+ padding: 0px;
+}
+body{
+  font-family: "Lato", sans-serif;
+}
+.nav-bar { grid-area: nav;}
+.bac-img { grid-area: img; }
+.contain { grid-area: con;}
+.black-box { grid-area: back;}
+.contact { grid-area: cont;}
+.image { grid-area: img2;}
+.footer { grid-area: footer;}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'nav nav nav nav nav nav'
+    'img img img img img img'
+    'con con con con con con'
+    'back back back back back back'
+    'cont cont cont cont cont cont'
+    'img2 img2 img2 img2 img2 img2'
+    'footer footer footer footer footer footer';
+    width: 100%;
+  }
+
+.nav-bar { 
+    grid-area: nav;
+    background-color: black;
+    color: white;
+    list-style: none;
+    box-shadow: 0px 15px 10px rgb(31, 30, 30);
+}
+.nav-bar ul{
+  display: inline-block;
+}
+.nav-bar ul li { 
+  display: inline-block;
+  padding: 15px 24px;
+  text-align: center;
+  font-size: 16px;
+}
+.nav-bar i{
+  float: right;
+  font-size: 15px;
+  padding: 15px;
+}
+.nav-bar ul li:hover{
+  color: #000;
+  background-color: rgb(190, 190, 190);
+}
+.nav-bar i:hover{
+  background-color: red;
+}
+.bac-img img{
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* conrain*/
+.contain{
+  max-width: 880px;
+  padding: 0px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box1{
+  padding: 40px 10px 20px 10px;
+}
+.first h2{
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+  margin: 10px 0px;
+  font-size: 35px;
+}
+.first :nth-child(2){
+  color: black;
+  opacity: 0.6;
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  margin: 15px 0px ;
+}
+.first :last-child{
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.second{
+  display: flex;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  justify-content: center;
+  margin-top: 48px;
+}
+.second img{
+  margin: 43px;
+  width: 200px;
+}
+.black-box{
+  background-color: black;
+}
+.main-box{
+  max-width: 800px;
+  padding: 64px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header h1{
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+  margin: 20px 0;
+  letter-spacing: 4px;
+
+}
+.header p{
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+  margin:20px 0;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 15px;
+}
+.black-box ul{
+  background-color: white;
+  margin: 30px 0px;
+}
+.black-box ul li{
+  border: 0.6px solid rgb(182, 182, 182);
+  padding: 10px 16px;
+  font-size: 15px;
+}
+.black-box ul li p{
+  display: inline;
+  color: rgb(116, 116, 116);
+}
+.black-box ul li span{
+  background-color: rgb(243, 98, 98);
+  color: white;
+  margin: 25px;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+}
+.black-box ul li #one{
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.cont-box{
+  display: flex;
+}
+.image-box{
+  float: left;
+  margin: 5px;
+}
+.image-box div{
+  background-color: white;
+}
+.image-box img{
+  width: 100%;
+  vertical-align: middle;
+}
+.image-box div :first-child{
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 10px 16px;
+
+}
+.image-box div :nth-child(2){
+  color: darkgrey;
+  font-size: 15px;
+  margin: 10px 16px ;
+}
+.image-box div :nth-child(3){
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 13px 16px;
+}
+.image-box div button{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  margin: 10px 0px 25px 16px;
+  border: none;
+}
+.image-box img:hover{
+  background-color: black;
+  opacity: 0.5;
+}
+.image-box button:hover{
+  background-color: rgb(214, 214, 214);
+  color: black;
+}
+.contact{
+  max-width: 880px;
+  padding: 0px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+}
+.contact h1{
+  font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.contact p{
+  opacity: 0.6;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+}
+.con{
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.one{
+  display: block;
+  font-size: 18px;
+  padding: 8px;
+}
+.i{
+  width: 100%;
+  display: block;
+  
+}
+.ix{
+  width: 48%;
+  display: inline;
+}
+.ixx{
+  display: inline;
+  width: 48%;
+  
+}
+.ix input{
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+}
+.ixx input{
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+}
+.ixxx input {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+}
+.cont1 button{
+  padding: 10px;
+  float: right;
+  background: black;
+  color: white;
+  border: none;
+}
+.cont1 button:hover{
+  background-color: rgb(226, 222, 222) ;
+  color: #000;
+}
+.footer{
+  margin: 50px;
+  text-align: center;
+}
+.footer i{
+  font-size: 30px;
+  width: 29px;
+  opacity: 0.5;
+  margin: 20px 0px;
+}
+.footer p{
+  opacity: 0.5;
+}
+.footer p a{
+  color: #000;
+}
+.footer i:hover{
+  opacity: 0.3;
+}
